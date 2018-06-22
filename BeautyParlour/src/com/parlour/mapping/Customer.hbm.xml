@@ -1,0 +1,25 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping>
+
+	<class name="com.parlour.bean.CustomerBean" table="customer">
+		<meta attribute="class-description">
+			This class contain the customer details.
+		</meta>
+		<id name="customer_id" type="int"  column="customer_id" >
+			<generator class="native"/>
+		</id>
+		<property name="customer_name"  type="string" column="customer_name"/>
+		<property name="customer_contact"  type="string" column="customer_contact"/>
+		<property name="customer_address"  type="string" column="customer_address"/>
+		<property name="customer_inserted_date"  type="string" column="customer_inserted_date"/>
+		<property name="customer_active"  type="string" column="customer_active"/>
+		
+		<property name="customer_debt"  type="double" column="customer_debt" />
+		
+
+		
+	</class>
+</hibernate-mapping>

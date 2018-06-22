@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping>
+
+	<class name="com.parlour.bean.ServiceBean" table="services">
+		<meta attribute="class-description">
+			This class contain the Services details.
+		</meta>
+		<id name="id" type="int"  column="service_id"  >
+			<generator class="native"/>
+		</id>
+		<property name="name"  type="string" column="service_name"/>
+		<property name="cost"  type="double" column="service_cost" />
+		<property name="active"  type="int" column="service_active" />
+		<property name="date"  type="string" column="service_date" />
+		
+
+		
+	</class>
+</hibernate-mapping>
